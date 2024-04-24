@@ -81,7 +81,7 @@ header {
 }
 
 i {
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .imageContainer {
@@ -165,8 +165,6 @@ footer {
     padding-bottom: 40px;
     background-color: rgb(0, 151, 185);
 }
-
-
 
 .contactMe {
     font-size: 32px;
