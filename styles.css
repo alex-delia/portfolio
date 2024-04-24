@@ -93,6 +93,11 @@ img {
     width: 100%;
 }
 
+header img,
+footer img {
+    box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
 .name {
     text-align: center;
     text-wrap: nowrap;
