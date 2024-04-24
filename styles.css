@@ -85,11 +85,11 @@ i {
 }
 
 .imageContainer {
-    display: flex;
     position: relative;
 }
 
 img {
+    display: block;
     width: 100%;
 }
 
@@ -166,9 +166,7 @@ footer {
     background-color: rgb(0, 151, 185);
 }
 
-.contactInfo {
-    flex: 1;
-}
+
 
 .contactMe {
     font-size: 32px;
@@ -181,6 +179,10 @@ footer p {
 
 footer i {
     font-size: 40px;
+}
+
+.contactInfo {
+    flex: 1;
 }
 
 .imageContainer {
@@ -232,10 +234,6 @@ footer i {
     .contactInfo {
         flex: 1.5;
     }
-
-    .imageContainer {
-        flex: 1;
-    }
 }
 
 @media (min-width: 601px) and (max-width: 750px) {
@@ -267,12 +265,11 @@ footer i {
     }
 
     .infoContainer {
-        background: none;
         padding: 0;
         box-shadow: none;
     }
 
-    .title {
+    .heading {
         text-align: center;
     }
 
@@ -291,7 +288,7 @@ footer i {
         justify-content: center;
     }
 
-    .links i {
+    header i {
         font-size: 32px;
     }
 
@@ -306,6 +303,11 @@ footer i {
 
     .contactInfo {
         padding: 32px;
+    }
+
+    footer .links {
+        justify-content: center;
+
     }
 }
 
