@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <div class="imageContainer">
             <img src="./images/landscape.JPG" alt="" class="headerPhoto">
             <h1 class="name heading">Alex D'Elia</h1>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container">
         <h2 class="title heading">My Projects</h2>
         <div class="projects">
             <div class="card">
@@ -129,8 +129,27 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="container">
+        <div class="contactInfo">
+            <h2 class="contactMe heading">Contact Me</h2>
+            <p>Please get in touch if you think our work could be mutually beneficial!</p>
+            <p>1234 Random Road<br>Random Town, California 12345</p>
+            <p>555-555-5555</p>
+            <p>alex-delia@outlook.com</p>
+            <div class="links">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="devicon-github-original"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i
+                        class="devicon-linkedin-plain"></i></a>
+            </div>
+        </div>
+        <div class="imageContainer">
+            <picture>
+                <source media="(max-width: 1050px)" srcset="./images/greyShirtSmall.JPG" />
+                <source media="(min-width: 1051px)" srcset="./images/greyShirt.JPG" />
+                <img src="./images/greyShirt.JPG" alt="">
+            </picture>
+        </div>
     </footer>
 
     <script src="app.js"></script>

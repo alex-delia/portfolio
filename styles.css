@@ -29,20 +29,21 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 45%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 55%);
     background-color: rgb(0, 151, 185);
 }
 
-body {
-    margin: 24px 80px;
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 header {
-    margin-bottom: 0;
     display: grid;
     grid-template-columns: 1.25fr 2fr;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    padding-top: 40px;
 }
 
 .heading {
@@ -65,26 +66,26 @@ header {
     margin-bottom: 8px;
 }
 
-.infoContainer .links {
+.links {
     display: flex;
-    justify-content: end;
     gap: 16px;
 }
 
-.links i {
+.infoContainer .links {
+    justify-content: end;
+}
+
+i {
     font-size: 28px;
 }
 
 .imageContainer {
     display: flex;
-    align-items: center;
     position: relative;
 }
 
 img {
-    display: block;
     width: 100%;
-    object-fit: cover;
 }
 
 .name {
@@ -99,6 +100,10 @@ img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+main {
+    margin-bottom: 60px;
 }
 
 .projects {
@@ -142,14 +147,46 @@ img {
     grid-column: -1/1;
 }
 
+footer {
+    display: flex;
+    gap: 8px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(0, 151, 185);
+}
+
+.contactInfo {
+    flex: 1;
+}
+
+.contactMe {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    margin-bottom: 24px;
+}
+
+footer i {
+    font-size: 40px;
+}
+
+.imageContainer {
+    flex: 1;
+}
 
 @media (max-width: 1050px) {
-    body {
-        margin: 100px 60px
+
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     header {
         display: block;
+        padding-top: 100px;
         margin-bottom: 50px;
     }
 
@@ -181,6 +218,14 @@ img {
         column-gap: 40px;
         row-gap: 40px;
     }
+
+    .contactInfo {
+        flex: 1.5;
+    }
+
+    .imageContainer {
+        flex: 1;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 750px) {
@@ -195,8 +240,13 @@ img {
 }
 
 @media (max-width: 600px) {
-    body {
-        margin: 32px;
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    header {
+        padding-top: 32px;
     }
 
     header .imageContainer {
@@ -237,6 +287,15 @@ img {
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    footer.container {
+        display: block;
+        padding: 0;
+    }
+
+    .contactInfo {
+        padding: 32px;
     }
 }
 
