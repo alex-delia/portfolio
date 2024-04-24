@@ -112,6 +112,11 @@ img {
     box-shadow: 4px 8px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
+.card .imageContainer {
+    align-items: start;
+    border-bottom: 1px solid black;
+}
+
 .projectInfo {
     display: grid;
     grid-template-columns: 1fr auto;
